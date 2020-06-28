@@ -20,11 +20,12 @@ public class AccuracyDoubleFloat {
 
 
     public static void main(String[] args) {
-        System.out.println(volumeBallDouble(0));
-        System.out.println(volumeBallFloat(0f));
-        System.out.println(calculateAccuracy(0));
+        System.out.println(volumeBallDouble(EARTH_SQUARE));
+        System.out.println(volumeBallFloat((float) EARTH_SQUARE));
+        System.out.println(calculateAccuracy(EARTH_SQUARE));
     }
 
+  
 
 
 }

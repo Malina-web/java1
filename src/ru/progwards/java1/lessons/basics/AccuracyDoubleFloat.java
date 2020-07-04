@@ -6,11 +6,11 @@ public class AccuracyDoubleFloat {
 
 
     public static double volumeBallDouble(double radius) {
-        final double VOLUME_BALL = 4 / 3 * PI * (EARTH_SQUARE * EARTH_SQUARE * EARTH_SQUARE);
+        final double VOLUME_BALL = 1.333 * PI * (EARTH_SQUARE * EARTH_SQUARE * EARTH_SQUARE);
         return VOLUME_BALL;
     }
     public static float volumeBallFloat(float radius){
-        final double VOLUME_BALL = 4 / 3 * PI * (EARTH_SQUARE * EARTH_SQUARE * EARTH_SQUARE);
+        final double VOLUME_BALL = 1.333 * PI * (EARTH_SQUARE * EARTH_SQUARE * EARTH_SQUARE);
         return (float) VOLUME_BALL;
     }
     public static double calculateAccuracy(double radius){
@@ -22,10 +22,10 @@ public class AccuracyDoubleFloat {
     public static void main(String[] args) {
         System.out.println(volumeBallDouble(EARTH_SQUARE));
         System.out.println(volumeBallFloat((float) EARTH_SQUARE));
-        System.out.println(calculateAccuracy(EARTH_SQUARE));
+
     }
 
-  
+
 
 
 }
